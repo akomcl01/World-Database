@@ -1,0 +1,34 @@
+{% extends "base.html"%}
+
+{% block title %}Index{% endblock %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>User</title>
+  </head>
+  <body>
+    {% block body %}
+    <nav class="navbar navbar-static-top">
+  <div class="container">
+    CountryFacts
+  </div>
+</nav>
+    <h1>Welcome to Country Facts</h1>
+    <p>Know your countries and their continents</p>
+
+<table class="table table-bordered">
+  <tr class="header">
+    <th>Country</th>
+    <th>Continent</th>
+    </tr>
+      {% for name, continent in mylist %}
+        <tr><td>{{name}}</td><td>{{continent}}</td></tr>
+      {% endfor %}
+</table>
+
+
+{% endblock %}
+  </body>
+</html>
