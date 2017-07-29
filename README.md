@@ -1,6 +1,6 @@
 **Challenge**
 
-Flask Application
+Flask Application(Class Project)
 
 **Objectives**
 
